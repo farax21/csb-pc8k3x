@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Entreprise</title>
+    <style>
+      /* HEADER et MENU*/
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: white;
+        color: orange;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        margin-left: 20px;
+      }
+
+      .menu {
+        margin-right: 20px;
+      }
+
+      .menu a {
+        color: orange;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+
+      .header {
+        background-color: orange;
+        color: rgb(17, 12, 3);
+      }
+
+      /* FORM */
+      .form {
+        /* max-width: 400px; */
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 10px rgba(117, 67, 67, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+
+      .form-group input {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: orange;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #column {
+        width: 50%;
+        padding: 80px;
+      }
+
+      /* RECOMMANDE PAR LES MEILLEURS */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .block {
+        display: inline-block;
+        margin: 40px;
+      }
+
+      .block img {
+        width: 170px;
+        height: 170px;
+        background-color: #ccc;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .block p {
+        text-align: center;
+      }
+
+      /* OTHERS */
+      .white-separator {
+        border: 0.01px solid #fff;
+      }
+
+      .black-separator {
+        border: 0.01px solid orange;
+      }
+
+      .title {
+        text-align: center;
+      }
+       /* 2e SECTION */
+       .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sec_section_block {
+            display: inline-block;
+            margin: 40px;
+        }
+
+        .sec_section_block img {
+            width: 150px; 
+            height: 150px; 
+            background-color: #ccc;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .sec_section_block p {
+            text-align: center;
+        }
+
+        /* 3e SECTION */
+        .third_section{
+            background-color :orange;
+            padding: 20px;
+        }
+
+        .third_section_title{
+            text-align: center;
+            color:white;
+        }
+
+        .temoignage{
+            padding: 40px;
+        }
+
+        /* 4e SECTION */
+        .fourth_section{
+            padding: 60px;
+        }
+
+        .fourth_column{
+            padding: 25px;
+            width: 50%;
+        }
+
+        /* 5e SECTION */
+        .fifth_section{
+            padding: 50px; background-color :orange
+        }
+
+        /* OTHERS */
+        .white-separator {
+            border: 0.01px solid #fff;
+        }
+        
+        .black-separator {
+            border: 0.01px solid black;
+        }
+
+        .title{
+            text-align: center;
+        }
+
+        .photo {
+            width: 100px; /* Vous pouvez ajuster la largeur et la hauteur en fonction de vos besoins */
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+            src="https://euforia.fr/wp-content/uploads/2023/09/cropped-logo-petit.png"
+            width="112"
+            height="28"
+            />
+      </div>
+      <nav class="menu">
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <div class="white-separator"></div>
+
+    <!-- header -->
+    <div class="header">
+      <table>
+        <tr>
+          <!-- proposition de valeur -->
+          <td id="column">
+            <h2> Skipti, l'application d'échange de services</h2>
+            <p>
+               
+
+                Économique, écologique et social
+                
+                Skipti, c'est l'application qui vous permet d'échanger des services avec d'autres personnes. Fini les frais, les déchets et la solitude !
+                
+                En quelques clics, trouvez la personne qui a besoin de ce que vous avez à offrir et proposez-lui votre service en échange d'un autre service.
+                
+                Skipti, c'est la solution qui vous permet de gagner du temps, de l'argent et de rencontrer de nouvelles personnes.
+                
+                Téléchargez l'application dès aujourd'hui !            </p>
+          </td>
+
+          <!-- Formulaire d'inscription -->
+          <td id="column">
+            <div class="form">
+              <h1>Inscription</h1>
+              <form action="#" method="post">
+                <!-- Organisation du formulaire -->
+                <table>
+                  <!-- Nom et Prénom -->
+                  <tr>
+                    <!-- 1 colonne : prénom -->
+                    <td>
+                      <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required />
+                      </div>
+                    </td>
+
+                    <!-- 1 colonne : nom -->
+                    <td>
+                      <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required />
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Mail et bouton -->
+                <div class="form-group">
+                  <label for="email">Email :</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <button type="submit" class="btn">Je m'inscris</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 1e section -->
+
+    <div class="first_section">
+      <h2 class="title">Services proposés</h2>
+      <div class="container">
+        <div class="block">
+          <img
+            src="https://images.prismic.io/avec/82419441-c13d-4947-9dd0-a1cfe22246b4_2022.08.30_visuel_article_missions_AAD.jpg?auto=compress,format&rect=0,0,530,350&w=530&h=350"
+            alt="Logo"
+          />
+          <p>Aide à domicile</p>
+        </div>
+        <div class="block">
+          <img
+            src="https://www.maison-travaux.fr/wp-content/uploads/sites/8/2020/11/des-outils-de-bricolage-002.jpg"
+            alt="Logo"
+          />
+          <p>Bricolage</p>
+        </div>
+        <div class="block">
+          <img
+            src="https://d1vrukq96dal30.cloudfront.net/assets/categories/29v-31d43f16020ba6b814740ff84bb6801d453b2564bc53267d417e20c8d0916feb.svg"
+            alt="Logo"
+          />
+          <p>Cours particuliers</p>
+        </div>
+        <div class="block">
+          <img
+            src="https://img-31.ccm2.net/JH2o8PSyip6VoFSn--O2v_aP4JE=/1240x/smart/bf8572d5181f4ff3a3357c35c8ee63ad/ccmcms-hugo/10557585.jpg"
+            alt="Logo"
+          />
+          <p>Animaux</p>
+        </div>
+        <div class="block">
+          <img
+            src="https://media.istockphoto.com/id/1340208950/fr/vectoriel/les-travailleurs-du-nettoyage-ont-isol%C3%A9-des-personnages-de-dessins-anim%C3%A9s-plats-homme-et.jpg?s=612x612&w=0&k=20&c=MmeaCqs2W7YYq3LPC2CerbFpRqPO9AJTIuwqJiKWRsE="
+            alt="Logo"
+          />
+          <p>Menage</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-separator"></div>
+  </br></br></br></br></br></br></br></br>
+
+    <!-- 2e SECTION -->
+    <div class="sec_section">
+      <h2 class="title">Comment ça marche ?</h2>
+      <div class="main">
+        <div class="sec_section_block">
+          <img src="https://img.freepik.com/vecteurs-premium/icone-clic-main-dans-conception-style-contour-mode-illustration-graphique-vectorielle-cliquez-symbole-pour-conception-site-web-logo-application-interface-utilisateur_175838-2817.jpg?w=2000" alt="Logo" />
+          <p>Déposer votre annonce</p>
+        </div>
+        <div class="sec_section_block">
+          <img src="https://alliancesolidaire.org/wp-content/uploads/2020/05/Capture-d%E2%80%99%C3%A9cran-2020-05-12-%C3%A0-11.57.48-1024x815.png" alt="Logo" />
+          <p>Trouvez de l'aide</p>
+        </div>
+        <div class="sec_section_block">
+          <img src="https://img-0.journaldunet.com/URZMac4NWjMn1PxI1DTDP9wVKAo=/1500x/smart/177dfd9bb7b74b5e8b03bcd2fec11229/ccmcms-jdn/11515152.jpg" alt="Logo" />
+          <p>Transferez vos skipties</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3e SECTION -->
+    <div class="third_section">
+      <h2 class="third_section_title">Témoignages clients</h2>
+      <h5 class="title">Découvrez ce que disent nos clients</h5>
+
+      <!-- Témoignages -->
+      <table>
+        <!-- 1ere ligne de témoignage -->
+        <tr>
+          <!-- Un témoignage -->
+          <td class="temoignage">
+            <table>
+              <tr>
+                <!-- Image -->
+                <td>
+                    <img class="photo" src="https://images.pexels.com/photos/1937434/pexels-photo-1937434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </td>
+                
+                <!-- Texte -->
+                <td>
+                    "J'utilise Skipti depuis quelques années et je suis vraiment satisfait. C'est une super application pour échanger des services avec des personnes de ma région. J'ai pu trouver quelqu'un pour m'aider à réparer mon vélo, quelqu'un pour me donner des cours de cuisine et quelqu'un pour me prêter un outil. J'ai vraiment gagné en autonomie et j'ai même rencontré des personnes qui partagent mes passions. Je recommande vivement Skipti à tous ceux qui cherchent une solution pratique et conviviale."-Léa                </td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Un témoignage -->
+    <td class="temoignage">
+        <table>
+            <tr>
+                <!-- Image -->
+                <td>
+                    <img class="photo" src="https://images.pexels.com/photos/7752815/pexels-photo-7752815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    
+                </td>
+                
+                <!-- Texte -->
+                <td>
+                    "J'ai découvert Skipti il y a quelques semaines et je suis vraiment ravie. C'est une super application pour rencontrer des personnes de ma génération. J'ai pu trouver quelqu'un pour m'aider à faire mes courses, quelqu'un pour m'aider à m'occuper de mon jardin et quelqu'un pour me tenir compagnie. J'ai vraiment gagné en autonomie et en lien social. Je recommande vivement Skipti à tous ceux qui cherchent une solution pour rompre l'isolement." -Hélène
+                </td>
+            </tr>
+        </table>
+          </td>
+        </tr>
+
+        <!-- 2e ligne de témoignage -->
+        <tr>
+            <!-- Un témoignage -->
+            <td class="temoignage">
+                <table>
+                    <tr>
+                        <!-- Image -->
+                        <td>
+                            <img class="photo" src="https://images.pexels.com/photos/7752813/pexels-photo-7752813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </td>
+                        
+                        <!-- Texte -->
+                        <td>
+                            "J'ai découvert Skipti il y a quelques mois et je suis vraiment conquis. C'est une super application pour trouver des services de qualité à des prix très abordables. J'ai pu trouver quelqu'un pour m'aider à repeindre ma maison, quelqu'un pour m'aider à monter un meuble et quelqu'un pour m'aider à réparer mon ordinateur. J'ai vraiment gagné en temps et en argent, et j'ai même pu rencontrer des personnes très compétentes. Je recommande vivement Skipti à tous ceux qui cherchent une solution pratique et économique." -Eliott
+                        </td>
+              </tr>
+            </table>
+          </td>
+          
+          <td class="temoignage">
+              <table>
+                  <tr>
+                      <!-- Image -->
+                      <td>
+                          
+                          <img class="photo" src="https://images.pexels.com/photos/5308640/pexels-photo-5308640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </td>
+
+                <!-- Texte -->
+                <td>
+                    "J'ai découvert Skipti il y a quelques semaines et je suis vraiment ravie. C'est une super application pour rencontrer des personnes de ma génération. J'ai pu trouver quelqu'un pour m'aider à faire mes courses, quelqu'un pour m'aider à m'occuper de mon jardin et quelqu'un pour me tenir compagnie. J'ai vraiment gagné en autonomie et en lien social. Je recommande vivement Skipti à tous ceux qui cherchent une solution pour rompre l'isolement."-Théo                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 4e SECTION -->
+    <div class="fourth_section">
+      <table>
+        <!-- Bénéfice 1 -->
+        <tr>
+          <td class="fourth_column">
+            <h3>L'entraide au coeur des échanges</h3>
+            <p>
+              
+L'entraide au coeur des échanges avec Skipti
+
+Skipti est une application d'échange de services gratuit qui permet aux particuliers de s'entraider en échange de compétences ou de biens. L'idée est simple : vous avez une compétence que vous souhaitez partager ? Vous avez besoin d'aide pour une tâche ? Skipti est là pour vous !
+
+L'entraide est au coeur des échanges sur Skipti. En effet, l'objectif est de créer une communauté où chacun peut apporter sa contribution et recevoir de l'aide en retour. C'est une belle façon de créer des liens avec ses voisins et de rendre sa ville plus solidaire.
+
+Sur Skipti, vous pouvez trouver des services de toutes sortes, du baby-sitting au bricolage en passant par le soutien scolaire. Il y en a pour tous les goûts et tous les besoins !
+
+Si vous souhaitez vous lancer dans l'aventure, il suffit de créer un compte et de publier une offre ou une demande de service. Vous pouvez également consulter les offres et les demandes des autres utilisateurs.
+            </p>
+          </td>
+
+          <td class="fourth_column">
+            <!-- vvv remplacer par ton image vvv -->
+            <div>
+            <img style="width: 600px;" src="https://www.banquedesterritoires.fr/sites/default/files/styles/landscape_auto_crop/public/2020-03/Entraide%20solidarite%20%C2%A9Michael%20D%20Brown%202013.jpg?itok=OjC1HTgG"/> 
+            
+            </div>
+          </td>
+        </tr>
+
+        <!-- Bénéfice 2 -->
+        <tr>
+          <td class="fourth_column">
+            <!-- vvv remplacer par ton image vvv -->
+            <div>
+              <img style="width: 600px;" src="https://img-0.journaldunet.com/URZMac4NWjMn1PxI1DTDP9wVKAo=/1500x/smart/177dfd9bb7b74b5e8b03bcd2fec11229/ccmcms-jdn/11515152.jpg"/>
+              </div>
+          </td>
+
+          <td class="fourth_column">
+            <h3>Skipties, la monnaie d'échange gratuit</h3>
+            <p>
+              
+
+Skipti est une application d'échange de services gratuits qui utilise un système de monnaie fictive appelé Skipties. Les Skipties sont attribués aux utilisateurs en fonction de leurs contributions à la communauté. Par exemple, un utilisateur qui propose un service gratuit recevra des Skipties en échange. Ces Skipties peuvent ensuite être utilisés pour obtenir des services d'autres utilisateurs.
+
+Le système des Skipties permet à Skipti de fonctionner sans argent. Cela permet à l'application d'être accessible à tous, quel que soit leur niveau de revenus. De plus, le système des Skipties encourage les utilisateurs à contribuer à la communauté. En effet, plus un utilisateur contribue, plus il recevra de Skipties.
+
+Voici quelques exemples de services qui peuvent être échangés contre des Skipties :
+
+Garde d'enfants
+Travaux manuels
+Cours particuliers
+Covoiturage
+Services de proximité
+Skipti est une application innovante qui permet aux gens de s'entraider sans argent. Le système des Skipties est un élément clé de ce succès.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="black-separator"></div>
+
+    <!-- 5e SECTION -->
+    <div class="fifth_section">
+        <table>
+          <tr>
+            <!-- Texte -->
+            <td style="text-align: center; width: 60%;">
+              <h2>Où sommes-nous ?</h2>
+              <p>Adresse 1</p>
+              <p>Rue de l'université</p>
+              <p>38000 Grenoble</p>
+              <p>Tél: 04 76 76 34 21</p>
+            </td>
+  
+            <td>
+              <img src="https://www.google.com/maps/d/thumbnail?mid=1FyTlKgwfQNff3XaHjAUjsMBxGB0&hl=fr" alt="">
+            </td>
+          </tr>
+        </table>
+      </div>
+  </body>
+</html>
